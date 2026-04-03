@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Internet - High Speed Connectivity</title>
+    <style>
+        :root {
+            --blue-main: #007bff;
+            --blue-dark: #004085;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --bkash-pink: #d12053;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--light-bg); color: #333; line-height: 1.6; }
+
+        /* Header with Logo */
+        header { 
+            background: var(--white); 
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-img { width: 260px; height: auto; border-radius: 10px; }
+
+        /* Hero Section with Internet/Network Background Image */
+        .hero { 
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white); 
+            padding: 80px 20px; 
+            text-align: center;
+            border-bottom: 5px solid var(--blue-main);
+        }
+        
+        .hero p { 
+            font-size: 24px; 
+            font-weight: bold; 
+            margin-bottom: 25px; 
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        /* Service Charge Free Badge */
+        .offer-tag {
+            background: #ffcc00;
+            color: #000;
+            padding: 15px 35px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 22px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+            border: 2px solid #000;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Package Section */
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        .promo-text { text-align: center; color: var(--blue-dark); font-size: 22px; font-weight: bold; margin-bottom: 35px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; }
+        .card { 
+            background: var(--white); padding: 30px 15px; border-radius: 15px; text-align: center; 
+            border-bottom: 5px solid var(--blue-main); box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); border-color: #ffcc00; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .mbps { font-size: 28px; font-weight: bold; color: var(--blue-main); }
+        .price { font-size: 20px; font-weight: bold; margin: 10px 0; color: #333; }
+        .support { font-size: 13px; color: #28a745; font-weight: bold; text-transform: uppercase; }
+
+        /* Contact & Payment Section */
+        .contact-info { background: var(--white); padding: 50px 20px; border-top: 5px solid var(--blue-main); }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .info-item h3 { color: var(--blue-main); margin-bottom: 15px; font-size: 20px; border-left: 4px solid var(--blue-main); padding-left: 10px; }
+        .info-item p, .info-item a { display: block; color: #444; text-decoration: none; font-weight: 600; font-size: 17px; margin-bottom: 10px; }
+
+        /* bKash Payment Box */
+        .bkash-box {
+            background: #fff0f5;
+            border: 2px solid var(--bkash-pink);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .bkash-logo-img { width: 120px; height: auto; margin-bottom: 15px; }
+        .bkash-type { background: var(--bkash-pink); color: white; padding: 3px 12px; border-radius: 6px; font-size: 13px; font-weight: bold; }
+        .bkash-num { color: #333; font-size: 26px; font-weight: 900; letter-spacing: 1.5px; margin: 15px 0; display: block; }
+        .bkash-ref { 
+            font-size: 15px; 
+            color: #d12053; 
+            font-weight: bold; 
+            background: #ffe4ee; 
+            padding: 12px; 
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+
+        footer { background: var(--blue-dark); color: #fff; text-align: center; padding: 30px; font-size: 15px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="IMG-20260320-WA0001.jpg" alt="Exclusive Internet Logo" class="logo-img">
+    </header>
+
+    <section class="hero">
+        <p>নিরবচ্ছিন্ন ইন্টারনেট সংযোগের অভিজ্ঞতা নিন।</p>
+        <div class="offer-tag">Service Charge FREE!</div>
+    </section>
+
+    <div class="container">
+        <div class="promo-text">
+            আমাদের প্রিমিয়াম প্যাকেজের সাথে<br>
+            নিরবচ্ছিন্ন ইন্টারনেট সংযোগের অভিজ্ঞতা নিন
+        </div>
+
+        <div class="grid">
+            <div class="card"><div class="mbps">10 Mbps</div><div class="price">৳ 500</div><div class="support">24/7 Support</div></div>
+            <div class="card"><div class="mbps">15 Mbps</div><div class="price">৳ 800</div><div class="support">24/7 Support</div></div>
+            <div class="card" style="background: #e7f3ff; border: 2px solid var(--blue-main);"><div class="mbps">20 Mbps</div><div class="price">৳ 1000</div><div class="support">Best Value</div></div>
+            <div class="card"><div class="mbps">25 Mbps</div><div class="price">৳ 1400</div><div class="support">24/7 Support</div></div>
+            <div class="card"><div class="mbps">30 Mbps</div><div class="price">৳ 1800</div><div class="support">24/7 Support</div></div>
+            <div class="card"><div class="mbps">50 Mbps</div><div class="price">৳ 2700</div><div class="support">Corporate</div></div>
+            <div class="card"><div class="mbps">100 Mbps</div><div class="price">৳ 3800</div><div class="support">Ultimate</div></div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="info-grid">
+            <div class="info-item">
+                <h3>📍 Office Address</h3>
+                <p>Kazipara Itkhola Bazar, House No: 113, Dhaka</p>
+                <br>
+                <h3>📞 Contact Us</h3>
+                <a href="tel:+8801715063197">Phone: +8801715063197</a>
+                <a href="tel:+8801836679973">Phone: +8801836679973</a>
+                <a href="mailto:exclusive.internet3197@gmail.com">Email: exclusive.internet3197@gmail.com</a>
+            </div>
+
+            <div class="info-item">
+                <h3>💳 Bill Payment</h3>
+                <div class="bkash-box">
+                    <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash2-Logo.wine.svg" alt="bKash Logo" class="bkash-logo-img">
+                    <br>
+                    <span class="bkash-type">Personal Account</span>
+                    <span class="bkash-num">+8801715063197</span>
+                    <div class="bkash-ref">
+                        বিকাশ সেন্ড মানি করার সময় অবশ্যই রেফারেন্স-এ আপনার ফোন নাম্বার এবং বাসা নাম্বার দিবেন।
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Exclusive Internet Limited. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
