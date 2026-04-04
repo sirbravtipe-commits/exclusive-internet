@@ -3,64 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive Internet - Best ISP Service in Kazipara</title>
+    <title>Exclusive Internet - High Speed Broadband</title>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Hind Siliguri', sans-serif; background-color: #f0f6ff; margin: 0; padding: 0; color: #333; text-align: center; }
-        
-        /* ইউনিক হেডার ও লোগো */
-        header { background: #fff; padding: 30px 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 5px solid #0056b3; position: relative; }
-        .logo-img { max-width: 150px; height: auto; border-radius: 12px; margin-bottom: 10px; }
-        .company-name { color: #0056b3; margin: 5px 0; font-size: 32px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
-        
-        /* হিরো সেকশন - সুপার বিগ অফার */
-        .hero { background: linear-gradient(rgba(0,86,179,0.9), rgba(0,86,179,0.9)), url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg'); background-size: cover; color: white; padding: 60px 20px; margin-bottom: 30px; border-radius: 0 0 50px 50px; }
-        .hero h2 { font-size: 26px; margin-bottom: 20px; }
-        .big-offer { background: #ffcc00; color: #000; padding: 15px 30px; border-radius: 50px; font-weight: bold; display: inline-block; font-size: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        header { background: #fff; padding: 25px 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 5px solid #0056b3; }
+        .logo-img { max-width: 140px; height: auto; border-radius: 10px; }
+        .company-name { color: #0056b3; font-size: 30px; font-weight: 700; text-transform: uppercase; margin-top: 10px; }
 
-        /* আকর্ষণীয় প্যাকেজ টাইটেল */
-        .section-title { font-size: 24px; margin: 40px 20px 20px; color: #0056b3; line-height: 1.4; font-weight: bold; }
-        
+        /* হিরো সেকশন */
+        .hero { background: linear-gradient(rgba(0,86,179,0.8), rgba(0,86,179,0.8)), url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; color: white; padding: 50px 20px; border-radius: 0 0 30px 30px; }
+        .big-offer { background: #ffcc00; color: #000; padding: 12px 25px; border-radius: 50px; font-weight: bold; display: inline-block; font-size: 18px; margin-top: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        .section-title { font-size: 22px; margin: 40px 20px; color: #0056b3; line-height: 1.5; font-weight: bold; }
+
         /* প্যাকেজ কার্ড */
-        .package-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 10px; }
-        .card { background: white; border-radius: 20px; width: 280px; padding: 30px 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.06); border: 1px solid #e1e8ed; transition: 0.3s; position: relative; overflow: hidden; text-align: left;}
-        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); border-color: #0056b3; }
-        .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        .speed-icon { width: 40px; height: 40px; background: #0056b3; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; }
-        .card-title { font-size: 20px; color: #555; margin: 0; }
-        .price-tag { font-size: 40px; color: #0056b3; font-weight: bold; margin: 10px 0; }
-        .price-period { font-size: 16px; color: #888; font-weight: normal; }
-        .features { list-style: none; padding: 0; margin: 20px 0; font-size: 15px; color: #666; }
-        .features li { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
-        .features li::before { content: '✓'; color: #28a745; font-weight: bold; }
+        .package-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 15px; }
+        .card { background: white; border-radius: 15px; width: 280px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid #e1e8ed; overflow: hidden; transition: 0.3s; text-align: left; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
+        
+        /* কার্ডের ছবি */
+        .card-img { width: 100%; height: 150px; object-fit: cover; border-bottom: 3px solid #0056b3; }
+        
+        .card-content { padding: 20px; }
+        .speed-tag { background: #0056b3; color: white; padding: 5px 12px; border-radius: 5px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .price-tag { font-size: 32px; color: #333; font-weight: bold; margin: 10px 0; }
+        .features { list-style: none; padding: 0; margin: 15px 0; font-size: 14px; color: #666; }
+        .features li::before { content: '✓ '; color: #28a745; font-weight: bold; }
 
-        /* বিকাশ সেকশন */
-        .bkash-section { background: #fff; padding: 35px 25px; border-radius: 25px; margin: 50px 20px; box-shadow: 0 10px 30px rgba(209, 32, 83, 0.1); border: 2px solid #d12053; display: inline-block; min-width: 320px; max-width: 450px; }
-        .bkash-header { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 15px; }
-        .bkash-header img { width: 50px; }
-        .bkash-title { color: #d12053; margin: 0; font-size: 20px; }
-        .copy-box { background: #fff0f3; border: 2px dashed #d12053; padding: 20px; border-radius: 15px; cursor: pointer; margin: 20px 0; transition: 0.3s; }
-        .copy-box:hover { background: #ffe1e7; }
-        .bkash-num { font-size: 28px; font-weight: bold; color: #333; display: block; letter-spacing: 1px; }
-        .copy-hint { font-size: 14px; color: #d12053; font-weight: bold; margin-top: 8px; }
-        .bkash-instruction { font-size: 14px; color: #666; line-height: 1.6; background: #f9f9f9; padding: 15px; border-radius: 10px; text-align: left; border-left: 4px solid #d12053; }
-
-        /* কন্টাক্ট ও বায়ো */
-        .contact-card { background: #fff; padding: 40px 20px; margin: 50px 0 0; border-radius: 50px 50px 0 0; box-shadow: 0 -5px 20px rgba(0,0,0,0.03); border-top: 1px solid #eee; }
-        .bio-text { font-size: 16px; color: #555; line-height: 1.8; max-width: 600px; margin: 0 auto 30px; padding: 0 20px; }
-        .contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
-        .contact-item { background: #f0f6ff; padding: 20px; border-radius: 15px; border: 1px solid #d0e3ff; min-width: 250px; }
-        .contact-item h4 { margin: 0 0 10px; color: #0056b3; }
-        .contact-item p { margin: 5px 0; font-size: 15px; color: #555; }
-
-        footer { background: #0056b3; color: white; padding: 20px; font-size: 14px; }
+        /* বিকাশ ও কন্টাক্ট */
+        .bkash-box { background: #fff; padding: 25px; border-radius: 20px; margin: 40px 20px; border: 2px solid #d12053; display: inline-block; max-width: 400px; }
+        .copy-btn { background: #fff0f3; border: 2px dashed #d12053; padding: 15px; border-radius: 10px; cursor: pointer; font-size: 22px; font-weight: bold; color: #333; margin: 15px 0; }
+        
+        .footer-info { background: #fff; padding: 30px 20px; margin-top: 40px; border-top: 1px solid #ddd; }
+        footer { background: #0056b3; color: white; padding: 15px; font-size: 14px; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="1775244696878.png" alt="Exclusive Internet Logo" class="logo-img">
+    <img src="logo.png" alt="Logo" class="logo-img">
     <div class="company-name">Exclusive Internet</div>
 </header>
 
@@ -76,142 +58,64 @@
 
 <div class="package-container">
     <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">10</div>
-            <h3 class="card-title">Starter Plan</h3>
+        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&w=400&q=80" class="card-img" alt="Fiber">
+        <div class="card-content">
+            <div class="speed-tag">10 Mbps</div>
+            <div class="price-tag">৳ ৫০০</div>
+            <ul class="features"><li>Unlimited Data</li><li>24/7 Support</li></ul>
         </div>
-        <div class="price-tag">৳ ৫০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>Unlimited Data</li>
-            <li>Real IP Available</li>
-            <li>24/7 Dedicated Support</li>
-        </ul>
     </div>
 
     <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">15</div>
-            <h3 class="card-title">Basic Plan</h3>
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80" class="card-img" alt="WiFi">
+        <div class="card-content">
+            <div class="speed-tag">15 Mbps</div>
+            <div class="price-tag">৳ ৮০০</div>
+            <ul class="features"><li>Buffer-free YouTube</li><li>BDIX Access</li></ul>
         </div>
-        <div class="price-tag">৳ ৮০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>Buffer-free YouTube</li>
-            <li>BDIX & FTP Access</li>
-            <li>Optimal for Home Use</li>
-        </ul>
     </div>
 
     <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">20</div>
-            <h3 class="card-title">Standard Plan</h3>
+        <img src="https://images.unsplash.com/photo-1600132806638-2d64194e3d4e?auto=format&fit=crop&w=400&q=80" class="card-img" alt="Gaming">
+        <div class="card-content">
+            <div class="speed-tag">20 Mbps</div>
+            <div class="price-tag">৳ ১০০০</div>
+            <ul class="features"><li>Gaming Priority</li><li>Multi-device</li></ul>
         </div>
-        <div class="price-tag">৳ ১০০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>Super Fast Browsing</li>
-            <li>Multi-device Streaming</li>
-            <li>Low Latency Gaming</li>
-        </ul>
-    </div>
-
-    <div class="card" style="border-top: 4px solid #ffcc00;">
-        <div class="card-header">
-            <div class="speed-icon" style="background:#ffcc00; color:#000;">25</div>
-            <h3 class="card-title">Popular Plan</h3>
-        </div>
-        <div class="price-tag">৳ ১৪০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>HD Streaming</li>
-            <li>Priority Support</li>
-            <li>Best for Families</li>
-        </ul>
     </div>
 
     <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">30</div>
-            <h3 class="card-title">Premium Plan</h3>
+        <img src="https://images.unsplash.com/photo-1451187530230-b237ee60ef6e?auto=format&fit=crop&w=400&q=80" class="card-img" alt="Server">
+        <div class="card-content">
+            <div class="speed-tag">30 Mbps</div>
+            <div class="price-tag">৳ ১৮০০</div>
+            <ul class="features"><li>Corporate Speed</li><li>Ultra HD Streaming</li></ul>
         </div>
-        <div class="price-tag">৳ ১৮০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>Ultra Fast Downloads</li>
-            <li>Corporate Support</li>
-            <li>Seamless Video Calls</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">50</div>
-            <h3 class="card-title">Ultra Plan</h3>
-        </div>
-        <div class="price-tag">৳ ২৭০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>4K Streaming</li>
-            <li>Heavy Usage Optimized</li>
-            <li>Gaming Priority Link</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <div class="speed-icon">100</div>
-            <h3 class="card-title">Giga Plan</h3>
-        </div>
-        <div class="price-tag">৳ ৩৮০০ <span class="price-period">/ মাস</span></div>
-        <ul class="features">
-            <li>Enterprise Speed</li>
-            <li>Maximum Performance</li>
-            <li>Ultimate Connection</li>
-        </ul>
     </div>
 </div>
 
-<div class="bkash-section">
-    <div class="bkash-header">
-        <img src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" alt="bKash">
-        <h3 class="bkash-title">বিকাশ পেমেন্ট</h3>
-    </div>
-    <p style="margin: 0; color: #777;">(Bkash Personal Send Money Number)</p>
-    <div class="copy-box" onclick="copyNumber()">
-        <span id="num" class="bkash-num">+8801715063197</span>
-        <div class="copy-hint">নম্বর কপি করতে এখানে টাচ করুন</div>
-    </div>
-    <div class="bkash-instruction">
-        ⚠️ বিকাশে সেন্ড মানি করার সময় অবশ্যই রেফারেন্সে আপনার বাসা নাম্বার এবং আপনার নাম লিখে দিবেন ধন্যবাদ।
-    </div>
-</div>
-
-<div class="contact-card">
-    <p class="bio-text">
-        নির্বিচ্ছিন্ন ইন্টারনেট সংযোগের অভিজ্ঞতা নিন, আমাদের সাথে থাকুন ধন্যাবাদ। Exclusive Internet প্রতি ইউজারদের জন্য সেরা সেবা প্রদানে অঙ্গীকারবদ্ধ।
+<div class="bkash-box">
+    <img src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" width="50">
+    <p>(Bkash Personal Send Money Number)</p>
+    <div class="copy-btn" onclick="copyNum()">+8801715063197</div>
+    <p style="font-size: 13px; color: #666; background: #f9f9f9; padding: 10px; border-radius: 5px;">
+        (bkash e send monay korar somoy oboshoi Reference e Basha Number and apnr name likhe diben Dhonnobad)
     </p>
-    
-    <div class="contact-info">
-        <div class="contact-item">
-            <h4>📍 অফিসের ঠিকানা</h4>
-            <p>kazipara itkhola bazar,</p>
-            <p>113</p>
-        </div>
-        
-        <div class="contact-item">
-            <h4>📞 সাপোর্ট (24/7)</h4>
-            <p>ফোন: +8801715063197</p>
-            <p>ইমেইল: exclusive.internet3197.@gmail.com</p>
-        </div>
-    </div>
 </div>
 
-<footer>
-    &copy; 2026 Exclusive Internet. All rights reserved.
-</footer>
+<div class="footer-info">
+    <p><b>📍 ঠিকানা:</b> kazipara itkhola bazar, 113</p>
+    <p><b>📞 সাপোর্ট:</b> +8801715063197</p>
+    <p><b>📧 ইমেইল:</b> exclusive.internet3197.@gmail.com</p>
+    <p style="color: #666; font-style: italic;">"নির্বিচ্ছিন্ন ইন্টারনেট সংযোগের অভিজ্ঞতা নিন, আমাদের সাথে থাকুন ধন্যাবাদ। Exclusive Internet প্রতি ইউজারদের"</p>
+</div>
+
+<footer>&copy; 2026 Exclusive Internet. All rights reserved.</footer>
 
 <script>
-    // বিকাশ নম্বর কপি করার ফাংশন
-    function copyNumber() {
-        var numberText = document.getElementById("num").innerText;
-        navigator.clipboard.writeText(numberText).then(function() {
-            alert("বিকাশ নম্বর কপি হয়েছে: " + numberText);
+    function copyNum() {
+        navigator.clipboard.writeText("+8801715063197").then(() => {
+            alert("বিকাশ নম্বর কপি হয়েছে!");
         });
     }
 </script>
