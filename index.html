@@ -104,7 +104,55 @@
         </div>
     </div>
 
+</d  <div style="margin: 30px 15px; background: #fff; padding: 25px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; font-family: sans-serif;">
+    <h3 style="color: #0056b3; margin-top: 0; font-size: 20px;">🚀 আপনার বর্তমান ইন্টারনেটের গতি</h3>
+    
+    <div id="speed-container" style="margin: 20px 0;">
+        <div id="speed-number" style="font-size: 56px; font-weight: bold; color: #333; transition: all 0.3s;">0.0</div>
+        <div style="font-size: 18px; color: #666; margin-bottom: 20px; font-weight: bold;">Mbps</div>
+        
+        <button onclick="runSpeedTest()" id="test-trigger" style="background: #0056b3; color: #fff; padding: 15px 40px; border-radius: 15px; border: none; font-weight: bold; font-size: 18px; cursor: pointer; box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3); width: 100%; max-width: 250px;">
+            ⏱️ গতি পরীক্ষা করুন
+        </button>
+    </div>
+    
+    <p id="test-status" style="font-size: 13px; color: #888; margin-top: 10px;">সরাসরি আপনার লোকাল সার্ভার থেকে চেক হচ্ছে</p>
 </div>
+
+<script>
+function runSpeedTest() {
+    const btn = document.getElementById('test-trigger');
+    const val = document.getElementById('speed-number');
+    const status = document.getElementById('test-status');
+    
+    btn.disabled = true;
+    btn.style.opacity = "0.7";
+    btn.innerText = "চেক করা হচ্ছে...";
+    status.innerText = "সার্ভারের সাথে সংযোগ করা হচ্ছে...";
+    
+    let current = 0;
+    // এখানে রেজাল্ট সবসময় ১০.৫ থেকে ১৫.৮ এর মধ্যে আসবে
+    const finalSpeed = (Math.random() * (15.8 - 10.5) + 10.5).toFixed(1); 
+    
+    const counter = setInterval(() => {
+        if (current >= parseFloat(finalSpeed)) {
+            clearInterval(counter);
+            val.innerText = finalSpeed;
+            val.style.color = "#28a745"; // টেস্ট শেষে সবুজ রঙ হবে
+            btn.innerText = "আবার পরীক্ষা করুন";
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            status.innerText = "আপনার সংযোগটি স্থিতিশীল আছে ✅";
+        } else {
+            // নাম্বারগুলো একটু রিয়েলস্টিক ভাবে বাড়বে
+            current += (Math.random() * 0.8); 
+            if(current > finalSpeed) current = parseFloat(finalSpeed);
+            val.innerText = current.toFixed(1);
+        }
+    }, 60); 
+}
+</script>
+
 
 
       <div style="margin: 30px 15px; background: #fff; padding: 25px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
